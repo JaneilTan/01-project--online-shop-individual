@@ -1,10 +1,10 @@
 const getProducts = async () => {
   // TODO Fetch products and prices from the Stripe API
   // Use the following URL for your fetch request
-  const url = `${process.env.REACT_APP_API_URL}/products`;
+  const url = await fetch("https://stars-uaj-staging.begin.app");
 
-  const products = [];
-
+  const products = await url.json();
+  console.log(products);
   return products;
 };
 
