@@ -4,7 +4,9 @@ const getProducts = async () => {
   const url = await fetch("https://stars-uaj-staging.begin.app");
 
   const products = await url.json();
-  console.log(products);
+
+  console.log(products.ok);
+
   return products;
 };
 
