@@ -8,20 +8,21 @@ const Products = ({ products }) => {
             name,
             description,
             image= product.images[0],
-            price={formatAmount(product.prices[0].unit_amount)};
-
+            price=product.prices[0].unit_amount / 100,
             
+
         } = product;
         return (
-            <>
+    
             <Product
             key={id}
             name={name}
             description={description}
             src={image}
             price={price}
+           
             />
-            </>
+            
         );
     });
 
