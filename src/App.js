@@ -2,8 +2,8 @@ import { React, useEffect, useState } from "react";
 import "./App.css";
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
-// import Product from "..src/components/Product";
-import Product from "./components/Product";
+import Products from "./components/Products";
+
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
        {/* FilteBy */}
        {/* SortBy */}
       </div>
-      <Product products={products} />
+      <Products products={products} />
     
     </div>
     

@@ -1,4 +1,4 @@
-import Product from "./component/Products";
+import Product from "./Product";
 import { React } from "react";
 
 const Products = ({ products }) => {
@@ -7,7 +7,9 @@ const Products = ({ products }) => {
             id, 
             name,
             description,
-            
+            image= product.images[0],
+            price={formatAmount(product.prices[0].unit_amount)};
+
             
         } = product;
         return (
@@ -16,6 +18,8 @@ const Products = ({ products }) => {
             key={id}
             name={name}
             description={description}
+            src={image}
+            price={price}
             />
             </>
         );
