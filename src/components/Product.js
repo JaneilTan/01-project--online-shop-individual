@@ -8,7 +8,7 @@ const Product = ({ name, description, src, price, onCheckout }) => {
             <h3>{name}</h3>
             <p>{description}</p>
   
-            <p>{price}</p>
+            <p>$ {price}</p>
             <button onClick={onCheckout}>Buy now</button>
             </div>
         </li>

@@ -1,5 +1,6 @@
 import Product from "./Product";
 import { React } from "react";
+import { checkout } from "../services/checkout";
 
 const Products = ({ products }) => {
     const productToRender = products.map((product) => {
@@ -7,9 +8,9 @@ const Products = ({ products }) => {
             id, 
             name,
             description,
-            image= product.images[0],
-            price=product.prices[0].unit_amount / 100,
-            
+            image = product.images[0],
+            price = product.prices[0].unit_amount / 100,
+            priceId = product.prices[0].id,
 
         } = product;
         return (
@@ -20,7 +21,7 @@ const Products = ({ products }) => {
             description={description}
             src={image}
             price={price}
-           
+            onCheckout={() => checkout(priceId)}
             />
             
         );
