@@ -14,32 +14,31 @@ function App() {
   // use the products variable to read all of your products
   // and display them on your page
   const [products, setProducts] = useState([]);
-  // const [filterBy, setFilterBy] = useState("all");
-  // const [sortBy, setSortBy] = useState("latest");
-  // const [filteredProducts, setFilteredProducts] = useState(getProducts())
+  const [filterBy, setFilterBy] = useState("all");
+  const [sortBy, setSortBy] = useState("latest");
+  const [filteredProducts, setFilteredProducts] = useState(getProducts())
 
   useEffect(() => {
     const loadData = async () => {
       const products = await getProducts();
       setProducts(products);
     
-    // const filtered = filterByCategory(products,filterBy);
-    // const sorted = sortProducts(filtered, sortBy);
-    // setFilteredProducts([...sorted]);
+    const filtered = filterByCategory(products,filterBy);
+    const sorted = sortProducts(filtered, sortBy);
+    setFilteredProducts([...sorted]);
     };
 
     loadData();
-  }, []);
+  }, [filterBy, sortBy, filteredProducts]);
 
   return (
     <div className="container">
       <h1>Pampurred Cats</h1>
       <div className="toolbar">
-       <FilterBy  />
-       <SortBy />
+       <FilterBy setFilterBy={setFilterBy} />
+       <SortBy setSortBy={setSortBy} />
       </div>
        <Products products={products} />
-    
     </div>
     
   );
