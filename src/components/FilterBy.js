@@ -10,8 +10,8 @@ const FilterBy = ({ setFilterBy }) => {
                 <label htmlFor="category">Filter by</label>
                 <select id="category" onChange={onChange}>
                     <option value="all">All</option>
-                    <option value="accessories">Accessories</option>
-                    <option value="costumes">Costumes</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Costumes">Costumes</option>
                 </select>
             </div>
         </>
