@@ -24,7 +24,8 @@
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint ./src",
     "lint:css": "stylelint ./src/**/*.css",
-    "prettier:check": "prettier --check './src/**/*{.css,.html,.js}'",
+    "prettier:check": "prettier --check \"./src/**/*{.css,.html,.js,.jsx}\"",
+    "prettier:write": "prettier --write \"./src/**/*{.css,.html,.js,.jsx}\"",
     "test:ci": "CI=true npm test",
     "eject": "react-scripts eject"
   },
