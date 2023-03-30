@@ -2,12 +2,12 @@
 
 const sortProducts = (products, sortBy) => {
 
-  
-    products.sort((productA, productB) => {
+   return [...products].sort((productA, productB) => {
       const aPrice = productA.prices[0].unit_amount;
       const bPrice = productB.prices[0].unit_amount;
-  
+    
       if (sortBy === "low") {
+        console.log(sortProducts);
         return aPrice - bPrice;
       }
   
@@ -18,8 +18,6 @@ const sortProducts = (products, sortBy) => {
         return productB.created - productA.created;
       }
     });
-  
-    return products;
   };
   
   export default sortProducts;
