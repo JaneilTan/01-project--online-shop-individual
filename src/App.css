@@ -42,7 +42,7 @@ img {
   list-style: none;
 }
 .product-grid-item {
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
 }
 .product-grid-item img {
