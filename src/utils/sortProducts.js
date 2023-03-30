@@ -16,8 +16,11 @@ const sortProducts = (products, sortBy) => {
       }
       if (sortBy === "latest") {
         return productB.created - productA.created;
+      } 
+      else {
+        return null;
       }
     });
   };
   
-  export default sortProducts;
+  export default sortProducts; 
