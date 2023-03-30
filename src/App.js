@@ -14,7 +14,6 @@ function App() {
   // use the products variable to read all of your products
   // and display them on your page
   const [products, setProducts] = useState([]);
-  const [sortBy, setSortBy] = useState(("latest"));
   const [filteredProducts, setFilteredProducts] = useState([])
 
   const onFilter = (filterBy) => {
@@ -23,7 +22,7 @@ function App() {
   }  
   const onSort = (sortBy) => {
     const sorted = sortProducts(products, sortBy);
-    setSortBy(sorted);
+    setFilteredProducts(sorted);
   }
 
   useEffect(() => {
@@ -31,7 +30,7 @@ function App() {
       const products = await getProducts();
       setProducts(products);
       setFilteredProducts(products);
-      setSortBy(sortBy);
+      
     };
 
     loadData();
