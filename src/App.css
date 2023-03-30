@@ -79,7 +79,7 @@ img {
   display: inline-block;
 }
 
-label {
+.label {
   color: #fff;
   text-shadow: var(--shadow);
   font-size: 1.3rem;
