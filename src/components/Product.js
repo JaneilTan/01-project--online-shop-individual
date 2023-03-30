@@ -5,7 +5,7 @@ const Product = ({ name, description, src, price, onCheckout }) => {
         <li className="product-grid-item">
             <div>
             <img src={src} alt={name}/>
-            <h3>{name}</h3>
+            <h2>{name}</h2>
             <p>{description}</p>
   
             <p>${price}</p>

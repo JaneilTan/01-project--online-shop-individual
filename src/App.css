@@ -20,7 +20,7 @@ h1 {
   text-align: center;
   margin: 1rem 0 3 rem;
 }
-h3,
+h2,
 p {
   color: #4d4d4d;
   font-size: 1.25rem;
@@ -31,20 +31,40 @@ img {
   height: auto;
 }
 
-.product-grid {
-  display: grid;
-  grid-gap: 2rem;
+.toolbar {
+  text-align: center;
+  margin-bottom: 2rem;
 }
+
+.filterBy,
+.sortBy {
+  display: inline-block;
+}
+
+.label {
+  color: #fff;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+select {
+  text-transform: capitalize;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  display: inline-block;
+  min-width: 10rem;
+  border-radius: 0.45rem;
+  font-size: 1.2rem;
+}
+
 .product-grid,
 .product-grid-item {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.product-grid-item {
-  padding: 1rem;
-  display: grid;
-}
+
 .product-grid-item img {
   height: 50%;
   border-radius: 0.5rem;
@@ -68,35 +88,14 @@ img {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-
-.toolbar {
-  text-align: center;
-  margin-bottom: 2rem;
+.product-grid {
+  display: grid;
+  grid-gap: 2rem;
 }
-
-.filterBy,
-.sortBy {
-  display: inline-block;
+.product-grid-item {
+  padding: 1rem;
+  display: grid;
 }
-
-.label {
-  color: #fff;
-  text-shadow: var(--shadow);
-  font-size: 1.3rem;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-select {
-  text-transform: capitalize;
-  margin-right: 2rem;
-  padding: 0.5rem;
-  display: inline-block;
-  min-width: 10rem;
-  border-radius: 0.45rem;
-  font-size: 1.2rem;
-}
-
 @media only screen and (min-width: 30rem) {
   .product-grid {
     grid-template-columns: 1fr 1fr;
