@@ -22,15 +22,6 @@ Watch the walkthrough video for setting up a new Stripe account: [Setup a Stripe
 2. Verify your email address
 3. Enter a name for your company
 
-# Setup Stripe Account
-
-Watch the tutorial for setting up a new Stripe account: [Setup a Stripe account](https://www.loom.com/share/e862bc3d5c674203af78ec4d45430403)
-
-1. Sign up for an account on [Stripe.com](https://stripe.com/nz). Use your email address.
-2. Verify your email address
-3. Enter a name for your company
-4. Create a test store, and ensure you can see the API Keys
-
 # Create products in Stripe
 
 Watch the [Adding products in Stripe](https://www.loom.com/share/16e40fb713554338adeedc72cc3eaefb) tutorial
