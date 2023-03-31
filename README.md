@@ -55,9 +55,12 @@ This project uses the following systems to work properly:
 - [Stripe](https://stripe.com/nz)
 - [Begin](https://ci.begin.com/)
 - [React](https://react.dev/)
+- [NodeJS and NPM](https://nodejs.org/)
 
 ### Prerequisites
 
 - [Node](https://nodejs.org/en)
 
-[View the project instructions](PROJECT-INSTRUCTIONS.md)
+### Deployed Application
+
+- https://online-shop-cm33.onrender.com
