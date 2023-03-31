@@ -21,7 +21,6 @@ Watch the walkthrough video for setting up a new Stripe account: [Setup a Stripe
 1. Sign up for an account on [Stripe.com](https://stripe.com/nz). Use your email address.
 2. Verify your email address
 3. Enter a name for your company
-4. Create a test store, and ensure you can see the API Keys
 
 # Setup Stripe Account
 
